@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bruh Button</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+    button {
+      padding: 20px 40px;
+      font-size: 24px;
+      border: none;
+      background-color: #4CAF50;
+      color: white;
+      border-radius: 8px;
+      cursor: pointer;
+      box-shadow: 0 4px #999;
+    }
+    button:active {
+      background-color: #3e8e41;
+      box-shadow: 0 2px #666;
+      transform: translateY(2px);
+    }
+  </style>
+</head>
+<body>
+
+  <button onclick="playBruh()">Press for Bruh</button>
+  <audio id="bruh-sound" src="bruh.mp3"></audio>
+
+  <script>
+    function playBruh() {
+      const audio = document.getElementById('bruh-sound');
+      audio.play();
+    }
+  </script>
+
+</body>
+</html>
